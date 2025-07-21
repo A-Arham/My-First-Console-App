@@ -16,20 +16,9 @@ while (running)
     switch (input)
     {
         case "1":
-            StackDemo.Run();
+            Console.WriteLine("You selected Stack.");
             break;
-        case "2":
-            QueueDemo.Run();
-            break;
-        case "3":
-            LinkedListDemo.Run();
-            break;
-        case "4":
-            BinaryTreeDemo.Run();
-            break;
-        case "5":
-            running = false;
-            break;
+        
         default:
             Console.WriteLine("Invalid choice. Press any key to try again.");
             Console.ReadKey();
