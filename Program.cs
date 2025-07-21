@@ -19,6 +19,7 @@ int previousRoadUpdate = 0;
 Console.CursorVisible = false;
 try
 {
+    WelcomeScreen();
     Initialize();
     LaunchScreen();
     while (keepPlaying)
@@ -76,6 +77,18 @@ void Initialize()
         Console.BufferWidth = windowWidth;
         Console.BufferHeight = windowHeight;
     }
+}
+void WelcomeScreen()
+{
+    Console.Clear();
+    Console.WriteLine("=======================================");
+    Console.WriteLine("          WELCOME TO THE GAME          ");
+    Console.WriteLine("=======================================");
+    Console.WriteLine();
+    Console.WriteLine("            🚗 DRIVE CRAZY 🚗");
+    Console.WriteLine();
+    Console.WriteLine(" Press any key to continue to the game...");
+    Console.ReadKey(true);
 }
 
 void LaunchScreen()
